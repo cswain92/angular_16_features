@@ -1,58 +1,65 @@
+/* Add these styles to your global styles or component-specific styles */
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
-  }
-  
-  .container {
-    max-width: 800px;
-    margin: 50px auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  h1 {
-    text-align: center;
-    color: #333;
-  }
-  
-  .feature-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 20px;
-  }
-  
-  button {
-    flex: 1 0 calc(25% - 10px); /* Distribute 25% of the width, deducting margin */
-    margin: 5px;
-    position: relative;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  button:hover {
-    background-color: #1577e0;
-  }
-  
-  /* button:hover::after {
-    content: attr(data-fullname);
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-color: #333;
-    color: #fff;
-    padding: 5px;
-    box-sizing: border-box;
-    border-radius: 4px;
-    z-index: 1;
-  } */
-  
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0; /* Light gray background color */
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff; /* White background color */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+}
+
+.feature-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+button {
+  background-color: #3498db; /* Blue background color */
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+}
+
+button a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Additional styles for the router-outlet content */
+router-outlet {
+  margin-top: 20px;
+}
+.feature-buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 10px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+button {
+  width: 100%;
+}

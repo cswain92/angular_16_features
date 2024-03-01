@@ -1,0 +1,14 @@
+
+<div class="user-list">
+    <h1>User List</h1>
+    <div class="user-cards" *ngIf="userData$ | async as userData">
+      <div *ngFor="let user of userData.data" class="user-card">
+        <img [src]="user.avatar" alt="{{ user.first_name }} {{ user.last_name }}">
+        <h2>{{ user.first_name }} {{ user.last_name }}</h2>
+        <p>Email: {{ user.email }}</p>
+      </div>
+    </div>
+  </div>
+  
+  
+  

@@ -12,7 +12,8 @@
     <button data-fullname="CSP support for inline-styles" onclick="navigateToFeature('feature8')">CSP support for inline-styles</button>
     <button data-fullname="Flexible ngOnDestroy" onclick="navigateToFeature('feature9')">Flexible ngOnDestroy</button>
     <button data-fullname="Self-closing tags" onclick="navigateToFeature('feature10')">Self-closing tags</button>
-    <button data-fullname="Better and more flexible components" onclick="navigateToFeature('feature11')">Better and more flexible components</button>
+    <button (click)="navigateTo('async-pipe')">Async Pipe</button>
+    <button (click)="navigateTo('box-model')">Css Box Model</button>
     <!-- Add more buttons for other features -->
   </div>
   <router-outlet></router-outlet>
