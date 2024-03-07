@@ -9,12 +9,14 @@ import { Router, RouterModule } from '@angular/router';
     standalone: true,
 })
 export class AppComponent {
-  title = 'angular-16-features';
   constructor(private router:Router) {
 
   }
 
   navigateTo(url:string) {
     this.router.navigate([`${url}`])
+  }
+  showMsg(msg:string) {
+    return msg;
   }
 }

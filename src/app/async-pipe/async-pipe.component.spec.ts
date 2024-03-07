@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { AsyncPipeComponent } from './async-pipe.component';
+import { HttpClientModule } from '@angular/common/http';
 
 describe('AsyncPipeComponent', () => {
   let component: AsyncPipeComponent;
@@ -8,7 +9,7 @@ describe('AsyncPipeComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      imports: [AsyncPipeComponent]
+      imports: [AsyncPipeComponent,HttpClientModule],
     });
     fixture = TestBed.createComponent(AsyncPipeComponent);
     component = fixture.componentInstance;
