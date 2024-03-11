@@ -3,6 +3,7 @@ import { SignalsComponent } from "./signals/signals.component";
 import { homeResolver } from "./resolvers/home.resolver";
 import { AsyncPipeComponent } from "./async-pipe/async-pipe.component";
 import { BoxModelComponent } from "./box-model/box-model.component";
+import { ParentComponent } from "./parent/parent.component";
 
 
 export const routes: Routes = [
@@ -21,5 +22,9 @@ export const routes: Routes = [
     {
       path: 'box-model',
       component: BoxModelComponent
+    },
+    {
+      path:'view-encapsulation',
+      component: ParentComponent
     }
   ];
