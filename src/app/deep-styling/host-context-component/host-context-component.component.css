@@ -1,0 +1,75 @@
+/* host-context-component.component.css */
+:host-context(.dark-theme) .host-context-container {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .host-context-container {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .product-card-container {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  /* Common styles for product categories */
+  .product-category {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .product-category h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+  }
+  
+  /* Specific styles for each category */
+  .normal {
+    background-color: #f8f8f8;
+    color: #333;
+  }
+  
+  .offer {
+    background-color: #ffe6e6;
+    color: #cc0000;
+  }
+  
+  .best {
+    background-color: #e6f7ff;
+    color: #0066cc;
+  }
+  .normal,
+  .offer,
+  .best {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  app-product-card {
+    width: calc(33.33% - 10px);
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  
+  /* Ensure the last card in each row doesn't have a right margin */
+  /* app-product-card:nth-child(3n) {
+    margin-right: 0;
+  } */
+  
+  /* Additional styles for dark theme */
+  :host-context(.dark-theme) .product-category {
+    color: #fff;
+  }
+  
+  :host-context(.dark-theme) app-product-card {
+    background-color: #444;
+    color: #fff;
+    border: 1px solid #666;
+  }
+  

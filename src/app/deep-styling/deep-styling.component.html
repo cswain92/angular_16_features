@@ -1,0 +1,18 @@
+
+<div class="container">
+    <button (click)="openComponent('ng-deep')" class="styled-button">::ng-deep</button>
+    <button (click)="openComponent('host')" class="styled-button">:host</button>
+    <button (click)="openComponent('host-context')" class="styled-button">:host-context()</button>
+  
+    <div *ngIf="selectedComponent === 'ng-deep'" class="component-container">
+      <app-ng-deep-component></app-ng-deep-component>
+    </div>
+    <div *ngIf="selectedComponent === 'host'" class="component-container">
+      <app-host-component></app-host-component>
+    </div>
+    <div *ngIf="selectedComponent === 'host-context'" class="component-container">
+      <app-host-context-component></app-host-context-component>
+    </div>
+  </div>
+  
+  
